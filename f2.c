@@ -21,6 +21,4 @@ void main(){
     {
         printf("character not found");
     }
-    
-    
 }
