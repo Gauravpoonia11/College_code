@@ -1,25 +1,26 @@
-//WAP to delete an index element from an array
+//WAP to find a character from given string...
 #include<stdio.h>
 #include<conio.h>
+#include<string.h>
 void main(){
-    int n,ar[100],index;
-    printf("Enter number:");
-    scanf("%d",&n);
-    for (int i = 0; i<n; i++){
-        printf("Element:");
-        scanf("%d",&ar[i]);
+    int x;
+    char st[100],a;
+    printf("Enter a string:\n");
+    gets(st);
+    printf("Enter the character:");
+    scanf("%c",&a);
+    int len=strlen(st);
+    for (int i = 0; i < len; i++)
+    {
+        if(st[i]==a){
+            printf("character position:%d\n",i);
+            x++;
+        }
     }
-    printf("Elements before deletion are:");
-    for(int i=0;i<n;i++){
-        printf("\n%d",ar[i]);
+    if (x==0)
+    {
+        printf("character not found");
     }
-    printf("\nEnter the index:");
-    scanf("\n%d",&index);
-    for(int i=index;i<n;i++){
-        ar[i]=ar[i+1];
-    }
-    printf("Elements after deletion are:");
-    for(int i=0;i<n-1;i++){
-        printf("\n%d",ar[i]);
-    }
+    
+    
 }
