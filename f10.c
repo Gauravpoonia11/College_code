@@ -1,3 +1,4 @@
+//write a program to find the factorial of a number using recursion funtion.
 #include<stdio.h>
 #include<conio.h>
 int fact(int a){

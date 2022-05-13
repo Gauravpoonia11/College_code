@@ -1,3 +1,5 @@
+//write a c program to check whether a number is prime, armstrong or perfect 
+//number using function.
 #include<stdio.h>
 #include<conio.h>
 void prime(int a){
@@ -27,7 +29,7 @@ void perfect(int a){
 //         x=c%10;
 //         mul=x*
 //     }
-// }
+// } 
 void main(){
     int a;
     printf("Enter a number: ");

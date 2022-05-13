@@ -1,7 +1,7 @@
 //Write a program that defines a function to add first n numbers.
 #include<stdio.h>
 #include<conio.h>
-int add(int n){
+void add(int n){
     int sum=0;
     for(int i=1;i<=n;i++){
         sum=sum+i;
